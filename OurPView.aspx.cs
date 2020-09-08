@@ -11,7 +11,27 @@ namespace ExerciseBranching
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblMsg.Visible = false;
+        }
 
+        protected void btnClick_Click(object sender, EventArgs e)
+        {
+            lblMsg.Visible = true;
+            if (string.IsNullOrEmpty(txtUName.Text) || string.IsNullOrEmpty(txtDesig.Text))
+            {
+                lblMsg.Text = "User Name and Desig are mandatory";
+            }
+            else
+            {
+                if ((txtUName.Text == "sam1256") && (txtDesig.Text == "Manager"))
+                {
+                    lblMsg.Text = "Login Success";
+                }
+                else
+                {
+                    lblMsg.Text = "LogIn Fail";
+                }
+            }
         }
     }
 }

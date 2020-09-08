@@ -1,2 +1,9 @@
 ﻿body {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+h1 {
+    background-color: whitesmoke;
+    text-align: center;
 }

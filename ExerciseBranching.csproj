@@ -124,6 +124,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="OurPView.aspx" />
+    <Content Include="OurStyle.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -147,6 +149,13 @@
     </Compile>
     <Compile Include="Models\Emp.cs" />
     <Compile Include="Models\EmpContext.cs" />
+    <Compile Include="OurPView.aspx.cs">
+      <DependentUpon>OurPView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OurPView.aspx.designer.cs">
+      <DependentUpon>OurPView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
